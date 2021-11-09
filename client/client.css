@@ -1,0 +1,52 @@
+body
+{
+    background-color: pink;
+}
+
+.flex-main-container{
+    display: flex;
+    
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .flex-collumn-container{
+    display: flex;
+    
+    flex-flow: column;
+
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .flex-collumn-score-container{
+    display: flex;
+    
+    flex-flow: column;
+
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;  
+  }
+
+  #canvas-area
+  {
+      border: solid;
+      background-color: white;
+  }
+
+  .flex-item {
+    padding: 5px;
+    margin-top: 10px;
+  }
+

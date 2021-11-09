@@ -1,0 +1,22 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon server.js -e js,html,css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-ws": "^5.0.2",
+    "nodemon": "^2.0.14",
+    "nunjucks": "^3.2.3",
+    "reload": "^3.2.0",
+    "uuid": "^8.3.2",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "type": "module"
+}

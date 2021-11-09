@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+
+  <title>DrawMyWord-Results</title>
+  <link rel="stylesheet" href="client.css">
+</head>
+
+<body>
+
+  <h1>Scores</h1>
+
+<ul>
+  {% for score in scores %}
+  <li>{{ score.name }}: {{ score.points}}</li>
+  {% endfor %}
+</ul>
+  <button id="play-button" >Start New Game</button>
+  <script src="result.js"></script>
+</body>
+
+</html>

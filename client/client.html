@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>DrawMyWord</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+
+<body>
+    <ul class="flex-main-container">
+        <ul class="flex-collumn-score-container">
+            <li>
+                <h1>SCORE</h1>
+                <li><textarea id="scoreArea" name="scoreArea" rows="30" cols="30"></textarea>
+                </li>
+            </li>
+        </ul>
+
+        <ul class="flex-collumn-container">
+            <li>
+                <h1 id="word-area">Word : ???</h1>
+            </li>
+            <li>
+                <div id="canvas-area"></div>
+            </li>
+            <li>
+                <div id="draw-param-area">
+                    <label for="colorpicker">Color Picker:</label>
+                    <input type="color" id="colorpicker" value="#0000ff">
+                    <label for="colorpicker">Size:</label>
+                    <input type="range" id="sizecursor" name="sizecursor" min="2" max="20" value="5">
+                    <button name="button" id="eraserButton">Clear</button>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="flex-collumn-container">
+            <li>
+                <h1 id="time-zone">Time</h1>
+            </li>
+            <li><textarea id="messageReceivedArea" name="messageReceivedArea" rows="30" cols="30">Welcome!</textarea>
+            </li>
+            <li><input type="text" id="messageInput" value="Enter your message here"></li>
+        </ul>
+    </ul>
+    <script src="/reload/reload.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>
