@@ -38,11 +38,14 @@ var btn = document.getElementById('eraserButton');
 btn.addEventListener('click', updateBtn);
 
 function updateBtn() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    var messageData = new Object();
-    messageData.type = "clear";
-    var jsonString= JSON.stringify(messageData);
-    socket.send(jsonString);
+    if(yourTurn === true)
+    {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        var messageData = new Object();
+        messageData.type = "clear";
+        var jsonString= JSON.stringify(messageData);
+        socket.send(jsonString);
+    }
 }
 
 function updatePos(x,y)
@@ -101,6 +104,7 @@ function connectWebSocket() {
             messageData.type = "client-info";
             messageData.id = getCookie('id');
             messageData.name = getCookie('name');
+            messageData.gameId = getCookie('gameId');
             var jsonString = JSON.stringify(messageData);
             socket.send(jsonString);
         }
